@@ -1,0 +1,408 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Texto escuro suave */
+    background-color: #f5f5f5;
+    text-align: justify;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 3rem 2rem;
+    /*background: linear-gradient(45deg, #F58E00, #FF2A88, #972ECA);*/
+    background-color: #d1e0e6; /* Azul claro suave */
+    color: #6a857e;
+  }
+  
+  .header .logo {
+    max-width: 300px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Sombra para destaque */
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Seções */
+  .section {
+    padding: 4rem 2rem;
+  }
+  
+  .section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #b96a8c;
+  }
+  
+  /* Sobre Mim */
+  .sobre-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sobre-content .foto {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-right: 3rem;
+    object-fit: cover;
+  }
+  
+  .texto-sobre {
+    max-width: 600px;
+  }
+  
+  /* Histórico */
+  .historico-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    
+  }
+
+  .projeto img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Limite para telas grandes */
+    border-radius: 8px; /* Bordas arredondadas para suavização */
+  }
+
+  .projeto video {
+    width: 200px;
+    height: 250px;
+  }
+  
+  .projeto {
+    padding: 1rem;
+    background-color: #FFF2E1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .projeto h3 {
+    color: #d2994b;
+    margin-bottom: 10px;
+  }
+  
+  /* Proposta */
+  .proposta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .pacote {
+    background-color: #F3E4FA;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pacote h3 {
+    margin-bottom: 1rem;
+    color: #d2994b;
+  }
+  
+  .pacote ul {
+    list-style: square;
+    padding-left: 20px;
+  }
+  
+  .pacote ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Rodapé */
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    background: #030F39;
+    color: #FFFFFF;
+  }
+
+  /* Estilo específico do Pacote 1 */
+.pacote {
+  background-color: #F3E4FA; /* Fundo suave em laranja claro */
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pacote h3 {
+  color: #b58544; /* Laranja principal da logo */
+  margin-bottom: 1rem;
+}
+
+.pacote h4 {
+  color: #972ECA; /* Roxo presente na logo */
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem; /* Espaçamento fluido */
+}
+
+.pacote ul, .pacote ol {
+  padding-left: 20px;
+  margin-top: 1rem;
+}
+
+.pacote ul li, .pacote ol li {
+  margin-bottom: 0.8rem;
+}
+
+.pacote ul li::marker, .pacote ol li::marker {
+  color: #9b5473; /* Rosa vibrante da logo */
+  font-weight: bold;
+}
+
+/* Valor destacado */
+.pacote p em {
+  background-color: #7b4b60; /* Fundo rosa vibrante */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-style: normal; /* Remove o itálico do <em> */
+}
+
+/* Container dos pacotes */
+.pacotes {
+  display: flex; /* Ativa o flexbox */
+  justify-content: space-between; /* Espaçamento uniforme entre os pacotes */
+  gap: 1.5rem; /* Espaço entre colunas */
+  flex-wrap: wrap; /* Faz os pacotes quebrarem para a próxima linha em telas menores */
+}
+
+/* Cada pacote */
+.pacote {
+  flex: 1; /* Divide o espaço proporcionalmente entre os pacotes */
+  min-width: 300px; /* Largura mínima para evitar pacotes muito pequenos */
+  max-width: 32%; /* Largura máxima de cada coluna em telas grandes */
+  background-color: #FFF2E1; /* Cor de fundo do pacote */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+/* Estilização dos Títulos dos Pacotes */
+.pacote h3 {
+  color: #d2994b; /* Laranja da logo */
+  margin-bottom: 1rem;
+}
+
+.pacote h4 {
+  color: #9b48c5; /* Roxo da logo */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pacote ul {
+  padding-left: 20px; /* Recuo para listas */
+  margin-top: 0.5rem;
+}
+
+.pacote ul li {
+  margin-bottom: 0.5rem; /* Espaço entre itens */
+}
+
+.pacote ul li::marker {
+  color: #a25476; /* Rosa vibrante para os marcadores */
+  font-weight: bold;
+}
+
+/* Valores destacados */
+.pacote p em {
+  background-color: #a25476; /* Fundo rosa vibrante para os valores */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-style: normal; /* Remove itálico para maior legibilidade */
+}
+
+/* Efeito ao passar o mouse */
+.pacote:hover {
+  transform: translateY(-5px); /* Elevação suave */
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .pacotes-container {
+    flex-direction: column; /* Dispor os pacotes em uma única coluna em telas menores */
+  }
+
+  .pacote {
+    max-width: 100%; /* Ajustar pacotes para ocupar toda a largura */
+  }
+}
+ 
+
+
+/* Configuração da Metodologia
+
+/* Proposta */
+  .metodologias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .metodologia {
+    background-color: #F3E4FA;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .metodologia h3 {
+    margin-bottom: 1rem;
+    color: #d2994b;
+  }
+  
+  .metodologia ul {
+    list-style: square;
+    padding-left: 20px;
+  }
+  
+  .metodologia ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Rodapé */
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    background: #030F39;
+    color: #FFFFFF;
+  }
+
+  /* Estilo específico do Pacote 1 */
+.metodologia {
+  background-color: #F3E4FA; /* Fundo suave em laranja claro */
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.metodologia h3 {
+  color: #d2994b; /* Laranja principal da logo */
+  margin-bottom: 1rem;
+}
+
+.metodologia h4 {
+  color: #972ECA; /* Roxo presente na logo */
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem; /* Espaçamento fluido */
+}
+
+.metodologia ul, .metodologia ol {
+  padding-left: 20px;
+  margin-top: 1rem;
+}
+
+.metodologia ul li, .metodologia ol li {
+  margin-bottom: 0.8rem;
+}
+
+.metodologia ul li::marker, .metodologia ol li::marker {
+  color: #9d5473; /* Rosa vibrante da logo */
+  font-weight: bold;
+}
+
+/* Valor destacado */
+.metodologia p em {
+  background-color: #9d5473; /* Fundo rosa vibrante */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-style: normal; /* Remove o itálico do <em> */
+}
+
+/* Container dos pacotes */
+.metodologias {
+  display: flex; /* Ativa o flexbox */
+  justify-content: space-between; /* Espaçamento uniforme entre os pacotes */
+  gap: 1.5rem; /* Espaço entre colunas */
+  flex-wrap: wrap; /* Faz os pacotes quebrarem para a próxima linha em telas menores */
+}
+
+/* Cada metodologia */
+.metodologia {
+  flex: 1; /* Divide o espaço proporcionalmente entre os pacotes */
+  min-width: 300px; /* Largura mínima para evitar pacotes muito pequenos */
+  max-width: 32%; /* Largura máxima de cada coluna em telas grandes */
+  background-color: #FFF2E1; /* Cor de fundo do pacote */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+/* Estilização dos Títulos dos Pacotes */
+.metodologia h3 {
+  color: #d2994b; /* Laranja da logo */
+  margin-bottom: 1rem;
+}
+
+.metodologia h4 {
+  color: #972ECA; /* Roxo da logo */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.metodologia ul {
+  padding-left: 20px; /* Recuo para listas */
+  margin-top: 0.5rem;
+}
+
+.metodologia ul li {
+  margin-bottom: 0.5rem; /* Espaço entre itens */
+}
+
+.metodologia ul li::marker {
+  color: #964c6c; /* Rosa vibrante para os marcadores */
+  font-weight: bold;
+}
+
+/* Valores destacados */
+.metodologia p em {
+  background-color: #92526e; /* Fundo rosa vibrante para os valores */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-style: normal; /* Remove itálico para maior legibilidade */
+}
+
+/* Efeito ao passar o mouse */
+.metodologia:hover {
+  transform: translateY(-5px); /* Elevação suave */
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .metodologias {
+    flex-direction: column; /* Dispor os pacotes em uma única coluna em telas menores */
+  }
+
+  .metodologia {
+    max-width: 100%; /* Ajustar pacotes para ocupar toda a largura */
+  }
+}
+ 
